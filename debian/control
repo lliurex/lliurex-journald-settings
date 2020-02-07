@@ -1,0 +1,14 @@
+Source: lliurex-journald-settings
+Section: utils
+Priority: optional
+Maintainer: M.Angel Juan <m.angel.juan@gmail.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: https://github.com/lliurex/lliurex-journald-settings
+Vcs-Git: https://github.com/lliurex/lliurex-journald-settings
+
+Package: lliurex-journald-settings
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Custom settings for systemd-journald
+ This package applies stronger limits for avoid too much disk usage and logging audit transport entries
