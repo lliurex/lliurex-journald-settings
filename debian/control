@@ -11,4 +11,5 @@ Package: lliurex-journald-settings
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Custom settings for systemd-journald
- This package applies stronger limits for avoid too much disk usage and logging audit transport entries
+ This package applies stronger limits for avoid too much disk usage 
+ and logging audit transport entries
