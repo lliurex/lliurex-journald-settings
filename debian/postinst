@@ -20,7 +20,9 @@ set -e
 
 case "$1" in
     configure)
+        deb-systemd-invoke stop systemd-journald-audit.socket || true
         deb-systemd-invoke mask systemd-journald-audit.socket || true
+        deb-systemd-invoke restart systemd-journald.service || true
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

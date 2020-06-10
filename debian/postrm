@@ -22,6 +22,8 @@ set -e
 case "$1" in
     purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
         deb-systemd-invoke unmask systemd-journald-audit.socket || true
+        deb-systemd-invoke start systemd-journald-audit.socket || true
+        deb-systemd-invoke restart systemd-journald.service || true
     ;;
 
     *)
