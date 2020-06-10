@@ -9,7 +9,7 @@ Vcs-Git: https://github.com/lliurex/lliurex-journald-settings
 
 Package: lliurex-journald-settings
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, init-system-helpers
 Description: Custom settings for systemd-journald
  This package applies stronger limits for avoid too much disk usage 
  and logging audit transport entries
