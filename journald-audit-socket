@@ -1,9 +1,7 @@
 #!/bin/bash
-socket=/etc/systemd/system/systemd-journald-audit.socket
-if [ -e "$socket" -a -h "$socket" ];then
-    destination=$(readlink -f $socket)
-    if [ "x$destination" != "x/dev/null" ]; then
-        dpkg-reconfigure lliurex-journald-settings
-    fi
+socket=systemd-journald-audit.socket
+active=$(systemctl is-active $socket)
+if [ "xactive" = "x$active" ];then
+    dpkg-reconfigure lliurex-journald-settings
 fi
 exit 0
