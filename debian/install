@@ -1,1 +1,2 @@
+journald-audit-socket /etc/cron.hourly/
 lliurex.conf    /etc/systemd/journald.conf.d/
