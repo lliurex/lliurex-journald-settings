@@ -1,3 +1,9 @@
+lliurex-journald-settings (0.1.2) focal; urgency=medium
+
+  * Focal packaging
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 28 Apr 2021 12:54:07 +0200
+
 lliurex-journald-settings (0.1.2) bionic; urgency=medium
 
   * Add cron job ensuring the configuration
