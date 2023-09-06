@@ -1,3 +1,9 @@
+lliurex-journald-settings (0.11.3) jammy; urgency=medium
+
+  * Initial release for Jammy
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 06 Sep 2023 13:34:25 +0200
+
 lliurex-journald-settings (0.1.3) focal; urgency=medium
 
   * Disable audit journald socket on livefs
