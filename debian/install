@@ -1,0 +1,3 @@
+journald-audit-socket /etc/cron.hourly/
+lliurex.conf    /etc/systemd/journald.conf.d/
+override.conf   /etc/systemd/system/systemd-journald-audit.socket.d/
